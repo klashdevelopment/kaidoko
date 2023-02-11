@@ -1,5 +1,8 @@
 # kaidoko
  The official API for klash development's database.
+ 
+## Hosting
+ The official instance of KAIDOKO is hosted on fly.io/fly.dev
 ## Using
 ### Prequisites
 * NodeJS installed
