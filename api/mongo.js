@@ -1,6 +1,9 @@
 import mongoose from 'mongoose';
 
-mongoose.connect(process.env.MONGO_TOKEN, {useNewUrlParser: true});
+await mongoose.connect(process.env.MONGO_TOKEN, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
 const db = mongoose.connection;
 
 export default {

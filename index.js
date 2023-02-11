@@ -14,7 +14,7 @@ const port = serverConfig.port;
 app.use(express.static(__dirname + '/public'));
 
 var routes = fs.readdirSync('routes');
-for (var route of routes) {
+await routes.forEach(route => {
     if (route.endsWith('.js') || route.endsWith('.mjs')) {
         import('./routes/' + route).then(routeImported => {
             console.log(`Importing route "${route}" as ${routeImported.default.endpoint}`);
@@ -24,8 +24,10 @@ for (var route of routes) {
                 console.error(`Error importing route "${route}"!`);
             }
         });
+    }else {
+        // directory
     }
-}
+});
 
 
 app.listen(port, ()=>{
