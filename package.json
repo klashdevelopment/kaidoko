@@ -1,0 +1,34 @@
+{
+  "name": "kaidoko",
+  "version": "1.0.0",
+  "description": "The official klashdevelopment Database API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node .",
+    "windows": "start http://localhost:3000 & node .",
+    "mac": "open http://localhost:3000 && node .",
+    "linux": "xdg-open http://localhost:3000 && node ."
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klashdevelopment/kaidoko.git"
+  },
+  "keywords": [
+    "kaidoko",
+    "klash",
+    "database",
+    "mongo"
+  ],
+  "author": "GavinGoGaming, KlashDevelopmentTeam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/klashdevelopment/kaidoko/issues"
+  },
+  "homepage": "https://github.com/klashdevelopment/kaidoko#readme",
+  "dependencies": {
+    "es-dirname": "^0.1.0",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
